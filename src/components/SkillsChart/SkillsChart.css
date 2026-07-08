@@ -1,0 +1,36 @@
+.skills-chart__inner {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-chart__intro {
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+  max-width: 540px;
+}
+
+.skills-chart__canvas {
+  width: 100%;
+  max-width: 480px;
+  padding: var(--space-3);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 600ms ease, opacity 600ms ease;
+  opacity: 0.6;
+  transform: scale(0.96);
+}
+.skills-chart__canvas[data-animated="true"] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.skills-chart__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

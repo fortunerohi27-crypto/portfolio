@@ -1,0 +1,49 @@
+/* Reusable keyframes and animation utilities */
+
+/* Section fade-in (triggered by adding .is-visible) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typewriter caret */
+@keyframes blink {
+  0%, 50%   { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  animation: blink 1s steps(2) infinite;
+}
+
+/* Skill bar fill (transition triggered by data-animated="true") */
+.skill-bar-fill {
+  width: 0;
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.skill-bar[data-animated="true"] .skill-bar-fill { width: var(--fill); }
+
+/* Reduced motion: disable non-essential animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .fade-in { opacity: 1; transform: none; }
+  .skill-bar-fill { width: var(--fill) !important; }
+}
