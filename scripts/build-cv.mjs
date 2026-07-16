@@ -175,11 +175,9 @@ const PROFILE =
   'Frontend developer with hands-on experience designing, building, and deploying responsive web applications. Comfortable across the React ecosystem (React, Next.js, Vite, React Native/Expo) and grounded in core JavaScript, HTML5, and CSS3. Currently expanding into backend and full-stack work through the ADSE program at Aptech, with a strong interest in shipping polished interfaces that solve real problems.';
 
 const SKILLS = [
-  ['Frontend', 'React, Next.js, Vite, React Native (Expo), HTML5, CSS3, JavaScript (ES6+), TailwindCSS, Framer Motion'],
-  ['3D & Interaction', 'Three.js, React Three Fiber, Framer Motion, smooth-scroll & parallax effects'],
+  ['Frontend', 'React, Next.js, Vite, React Native (Expo), HTML5, CSS3, JavaScript (ES6+)'],
   ['Backend (in progress)', 'Node.js, Express.js, REST APIs, JWT authentication'],
   ['Programming Languages', 'JavaScript, Java'],
-  ['Databases', 'MongoDB, SQL (foundational)'],
   ['Tools & Workflow', 'Git, GitHub, Vercel, VS Code, IntelliJ IDEA, Figma, npm'],
   ['Core Concepts', 'Component-based architecture, Responsive Web Design, DOM manipulation, Form validation, OOP, REST fundamentals'],
 ];
@@ -187,11 +185,11 @@ const SKILLS = [
 const PROJECTS = [
   {
     title: 'Nex Studio — Cinematic Landing Page',
-    stack: 'Next.js 14, TypeScript, Three.js, Framer Motion, Prisma',
+    stack: 'Next.js 14, TypeScript, Prisma',
     description:
-      'Full-stack marketing site for a creative studio. Features a Three.js hero scene, mouse-parallax effects, smooth cinematic scroll, full authentication, a role-based admin dashboard, and a content management system for gallery, testimonials, contact submissions, and newsletter subscribers.',
+      'Full-stack marketing site for a creative studio. Features smooth cinematic scroll, full authentication, a role-based admin dashboard, and a content management system for gallery, testimonials, contact submissions, and newsletter subscribers.',
     bullets: [
-      [{ text: 'Built a 3D hero scene with ', bold: false }, { text: 'Three.js', bold: true }, { text: ' and parallax-driven UI for an immersive first impression.' }],
+      [{ text: 'Built the marketing site with a smooth, cinematic scroll experience and a polished, content-driven UI.' }],
       [{ text: 'Implemented role-based admin dashboard and CMS for gallery, testimonials, and subscriber data.' }],
       [{ text: 'Modeled the data layer with ', bold: false }, { text: 'Prisma', bold: true }, { text: ' and delivered end-to-end auth flows.' }],
     ],
@@ -203,7 +201,7 @@ const PROJECTS = [
     description:
       'Single-page recreational outing platform cataloguing picnic and party games by audience (Indoor, Outdoor, Kids, Males, Females, Family) alongside curated getaway itineraries. Includes a looping background video, smooth-scroll navigation, active-section highlighting, a category filter, and a localStorage-backed visitor counter.',
     bullets: [
-      [{ text: 'Collaborated with a teammate from concept to a ', bold: false }, { text: 'live Vercel deployment', bold: true }, { text: ' as a Semester 1 eProject at Aptech.' }],
+      [{ text: 'Collaborated with a teammate from concept to a ', bold: false }, { text: 'live Vercel deployment', bold: true }, { text: '.' }],
       [{ text: 'Built responsive layouts with animated backgrounds across desktop, tablet, and mobile.' }],
       [{ text: 'Implemented category filtering, smooth scroll, and a persistent visitor counter using ', bold: false }, { text: 'localStorage', bold: true }, { text: '.' }],
     ],
@@ -237,7 +235,7 @@ const EDUCATION = [
   {
     school: 'Aptech Computer Education',
     detail: 'Advanced Diploma in Software Engineering (ADSE) — In Progress',
-    meta: 'Current: Semester 2',
+    meta: 'Current: In view',
   },
   {
     school: 'Senior Secondary School Certificate (SSCE) — NECO',
@@ -254,7 +252,6 @@ const EDUCATION = [
 const ACHIEVEMENTS = [
   'Designed, developed, and deployed multiple production web applications to Vercel.',
   'Built a portfolio of full-stack web projects and Java-based software on GitHub.',
-  'Completed the Semester 1 eProject at Aptech as a collaborative, end-to-end shipped product.',
 ];
 
 // --- Document ---
