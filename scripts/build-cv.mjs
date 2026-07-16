@@ -220,14 +220,15 @@ const PROJECTS = [
   },
   {
     title: 'ATM Console Application',
-    stack: 'Java, OOP',
+    stack: 'Java, OOP, File I/O',
     description:
-      'Java console application simulating core ATM operations, including deposits, withdrawals, balance inquiries, transaction history, and exit flow.',
+      'Java console ATM with login, balance, deposit, withdraw, transfer, and bounded transaction history. State is persisted to disk after every mutating action; PINs are stored as hashes, not plaintext.',
     bullets: [
-      [{ text: 'Applied ', bold: false }, { text: 'object-oriented principles', bold: true }, { text: ', conditional logic, loops, methods, and input validation for accurate transaction handling.' }],
-      [{ text: 'Implemented a bounded transaction history buffer and user input validation for safe account operations.' }],
+      [{ text: 'Modelled the domain as ', bold: false }, { text: 'Account', bold: true }, { text: ', ', bold: false }, { text: 'Bank', bold: true }, { text: ', and ', bold: false }, { text: 'Transaction', bold: true }, { text: ' classes with clear separation of I/O, validation, and business logic.' }],
+      [{ text: 'Implemented ', bold: false }, { text: 'file persistence', bold: true }, { text: ' (Java serialization) so balances and history survive a restart, plus an atomic transfer with rollback on failure.' }],
+      [{ text: 'Defended input at two layers: ', bold: false }, { text: 'reusable validation helpers', bold: true }, { text: ' in the CLI plus invariant checks inside the model.' }],
     ],
-    link: 'github.com/fortunerohi27-crypto/atm-system',
+    link: 'github.com/fortunerohi27-crypto/-atm-console-app',
   },
 ];
 
